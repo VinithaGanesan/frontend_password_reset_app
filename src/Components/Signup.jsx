@@ -19,7 +19,7 @@ export const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/auth/signup', data).then(response => {
+        axios.post('https://reset-password-app-1.onrender.com/auth/signup', data).then(response => {
             console.log(response);
             if (response.data.success) {
                 navigate('/login');

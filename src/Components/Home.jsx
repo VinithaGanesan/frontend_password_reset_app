@@ -7,7 +7,7 @@ const Home = () => {
 
   axios.defaults.withCredentials = true;
   const handleLogout = (e) => {
-    axios.get('http://localhost:5000/auth/logout')
+    axios.get('https://reset-password-app-1.onrender.com/auth/logout')
       .then(res => {
         if (res.data.success) {
           navigate('/login')

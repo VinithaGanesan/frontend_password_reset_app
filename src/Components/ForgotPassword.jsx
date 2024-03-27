@@ -16,7 +16,7 @@ const ForgotPassword = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/auth/forgotpassword', data)
+        axios.post('https://reset-password-app-1.onrender.com/auth/forgotpassword', data)
             .then(response => {
                 if (response.data.success) {
                     alert("check your email for reset password link")

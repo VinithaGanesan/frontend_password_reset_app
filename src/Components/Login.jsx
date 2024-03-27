@@ -19,7 +19,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:5000/auth/login', data).then(response => {
+        axios.post('https://reset-password-app-1.onrender.com/auth/login', data).then(response => {
             console.log(response);
             if (response.data.success) {
                 navigate('/home');
